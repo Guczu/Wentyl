@@ -1,0 +1,70 @@
+
+.startpage--container {
+    width: 70vw;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    /*animation: .5s ease-out 0s 1 appearNav normal forwards;*/
+}
+
+.startpage--img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35vw;
+}
+
+.startpage--bruh {
+    width: 30vw;
+    margin-top: 6.5vw;
+}
+
+.startpage--desc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35vw;
+    flex-direction: column;
+}
+
+.startpage--title {
+    font-size: 3vw;
+    font-family: 'Raleway', sans-serif;
+    color: #ff6666;
+}
+
+.startpage--description {
+    width: 30vw;
+    text-align: center;
+    font-size: 1vw;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.startpage--bruh:hover {
+    animation-name: rotateIMG;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rotateIMG {
+    from {
+        transform: rotate(-5deg)
+    }
+    to {
+        transform: rotate(-2deg)
+    }
+}
+
+@keyframes rotateBackIMG {
+    from {
+        transform: rotate(-2deg)
+    }
+    to {
+        transform: rotate(-5deg)
+    }
+}

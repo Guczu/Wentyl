@@ -1,0 +1,58 @@
+.readmore--container {
+    opacity: 0;
+    width: 1500px;
+    height: 1000px;
+    position: fixed;
+    background-color: #121111;
+    color: white;
+    z-index: 1000;
+    top: 3%;
+    border-radius: 25px;
+    animation: .25s ease-out 0s 1 showReadMore normal forwards;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.readmore--title {
+    font-size: 32px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.readmore--exit {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+    filter: invert(1);
+}
+
+@keyframes showReadMore {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: .99;
+    }
+}
+
+.readmore--img {
+    width: 600px;
+}
+
+.readmore--author {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.readmore--description {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+
+.readmore--desccontainer {
+    width: 50%;
+    text-align: justify;
+    overflow: scroll;
+    overflow-x: hidden;
+}

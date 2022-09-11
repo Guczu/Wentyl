@@ -1,0 +1,141 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+.red {
+    background: url('../images/image1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.yellow {
+    background: url('../images/image2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.green {
+    background: url('../images/image3.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.purple {
+
+}
+
+
+
+.page3 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+*{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.games--video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.games--back {
+    position: absolute;
+    width: 100px;
+    margin-left: 30px;
+    margin-top: 10px;
+    transform: scaleX(-1);
+    filter: invert(1);
+    transition: transform .4s;
+    z-index: 1000;
+}
+
+.games--back:hover {
+    cursor: pointer;
+    transform: scale(-1);
+}
+
+.games--backdiv {
+    position: absolute;
+    width: 150px;
+    height: 110px;
+}
+
+.panel {
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.gameinfo--title {
+    position: absolute;
+    font-size: 144px;
+    margin-top: -350px;
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: black 0px 5px 10px;
+}
+
+.gameinfo--description {
+    position: absolute;
+    font-size: 54px;
+    margin-top: -20px;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: black 0px 5px 10px;
+}
+
+.gameinfo--container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1800px;
+    height: 800px;
+}
+
+.gameinfo--button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 75px;
+    border-radius: 50px;
+    border: 3px solid white;
+    margin-top: 300px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color .4s, color .4s;
+    text-shadow: black 0px 0px 10px;
+    box-shadow: black 0px 0px 10px;
+}
+
+.gameinfo--button:hover {
+    background-color: white;
+    color: black;
+}

@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  background-color: #0c0c0c;
+  color: white;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.index--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,105 @@
+
+.navbar--logo {
+    max-width: 20vw;
+    max-height: 7vw;
+    animation: .25s ease-out 0s 1 scaleNav2 normal forwards;
+}
+
+.navbar--logo:hover {
+    max-width: 20vw;
+    max-height: 7vw;
+    animation: .25s ease-out 0s 1 scaleNav normal forwards;
+}
+
+
+
+.navbar--option:hover {
+    animation: .25s ease-out 0s 1 scaleNav normal forwards;
+    color: #ff6666;
+}
+
+@keyframes scaleNav {
+    from {
+        transform: scale(1)
+    }
+    to {
+        transform: scale(1.2)
+    }
+}
+
+@keyframes scaleNav2 {
+    from {
+        transform: scale(1.2)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+@keyframes appearNav {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        pointer-events: auto;
+    }
+}
+
+.navbar--option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2vw;
+    animation: 0.25s ease-out 0s 1 scaleNav2;
+}
+
+.navbar--menu {
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2vw;
+    /*animation: 0.25s ease-out 0s 1 scaleNav2;*/
+}
+
+.navbar--container {
+    pointer-events: none;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 7vw;
+    margin-top: 1vw;
+    animation: 2s ease-out 2s 1 appearNav normal forwards;
+}
+
+@media (max-width: 1000px) {
+    .navbar--logo {
+        width: 20vw;
+        height: 7vw;
+    }
+
+    .navbar--option {
+        font-size: 3vw;
+    }
+
+}
+
+.navbar--logocontainer {
+    width: 20vw;
+    max-height: 7vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: 1s ease-out 2s 1 appearLogo normal forwards;
+}

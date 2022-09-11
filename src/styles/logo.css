@@ -1,0 +1,30 @@
+
+.logo--container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.logo--img {
+    animation: animatedLogo 2s ease-out 0s 1 normal forwards;
+}
+
+@keyframes animatedLogo {
+    0% {width: 200px; transform: rotate(30deg)}
+    25% {width: 250px; transform: rotate(-30deg)}
+    50% {width: 300px; transform: rotate(30deg)}
+    75% {width: 350px; transform: rotate(-30deg); opacity: 1;}
+    100% {width: 750px; transform: rotate(0); opacity: 0; pointer-events: none; display: none}
+}
+
+@keyframes appearLogo {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

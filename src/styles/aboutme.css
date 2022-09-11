@@ -1,0 +1,210 @@
+.aboutme--container {
+    width: 1200px;
+    margin-top: 10%;
+}
+
+.aboutme--cont {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    opacity: 0;
+}
+
+.aboutme--imgcontainer {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    overflow: hidden;
+}
+
+.aboutme--imgcontainer img {
+    transition: transform .4s;
+}
+
+.aboutme--imgcontainer:hover img {
+    transform: scale(1.01);
+    transform-origin: 50% 50%;
+}
+
+.aboutme--img {
+    width: 400px;
+    border-radius: 10%;
+}
+
+.aboutme--imgtext {
+    width: 400px;
+    height: 100px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.aboutme--title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.aboutme--desc {
+    width: 700px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.37rem;
+    font-family: 'Raleway', sans-serif;
+    text-align: justify;
+}
+
+.aboutme--description {
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutme--skillsandeducation {
+    display: flex;
+}
+
+.aboutme--links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 160px;
+}
+
+.aboutme--education {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    height: 160px;
+}
+
+.aboutme--skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutme--skillstext {
+    font-size: 64px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.aboutme--education ul {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+}
+
+.aboutme--educationdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutme--education span {
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.aboutme--icons img {
+    margin-right: 15px;
+    margin-left: 15px;
+    filter: invert(1);
+    transition: transform .4s;
+}
+
+.aboutme--icons img:hover {
+    filter: grayscale(50%) brightness(100%) sepia(100%) hue-rotate(-10deg) saturate(100%) contrast(0.3);
+    cursor: pointer;
+    transform: scale(1.15);
+}
+
+.aboutme--icons {
+    display: flex;
+}
+
+.aboutme--linked {
+    width: 75px;
+}
+
+.aboutme--github {
+    width: 75px;
+}
+
+.aboutme--skillcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutme--skillimg {
+    width: 125px;
+    padding: 5px;
+    opacity: 0;
+    filter: brightness(.8);
+}
+
+.aboutme--skillname span {
+    width: 200px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+.aboutme--skillname img {
+    display: flex;
+    height: 50px;
+}
+
+.aboutme--skill {
+    width: 1000px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.gray {
+    filter: grayscale(1) brightness(.8);
+    opacity: .3;
+}
+
+.aboutme--arrow {
+    width: 25px;
+    filter: invert(.1)
+}
+
+.aboutme--skillname {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutme--loading {
+    width: 30px;
+    margin-top: 10px;
+    opacity: .8;
+}
